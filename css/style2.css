@@ -1,0 +1,93 @@
+:root {
+    --primary: #474747;
+    --secondary: #516FBC;
+    --third: #000000;
+    --forth: #E48845;
+    --fifth: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--third);
+    color: var(--fifth);
+
+}
+
+header {
+    background-color: var(--forth);
+    color: var(--fifth);
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    border-radius: 0rem 0rem 4rem 4rem;
+    font-family: 'broadway';
+
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 60%;
+    max-width: 1200px;
+    margin: 2rem 0;
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: var(--fifth);
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    font-family: 'broadway';
+
+}
+
+p {
+    font-size: 1.2em;
+    color: var(--fifth);
+    font-family: Copperplate, "Copperplate Gothic", fantasy;
+
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--secondary);
+    color: var(--third);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: Copperplate, "Copperplate Gothic", fantasy;
+
+}
+
+button:hover {
+    background: var(--fifth);
+}
+
+.icon-link {
+    font-size: 2em;
+    color: var(--secondary);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon-link:hover {
+    transform: scale(1.1);
+    color: var(--forth);
+}

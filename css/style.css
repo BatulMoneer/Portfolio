@@ -1,0 +1,671 @@
+:root {
+    --primary: #474747;
+    /*E48845*/
+    --secondary: #E48845;
+    /*516FBC*/
+    --third: white;
+    /*ffffff*/
+    --forth: #000000;
+    /*000000*/
+    --fifth: #516FBC;
+    /*474747*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--primary);
+}
+
+header {
+    background: var(--primary);
+    color: var(--third);
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .profile {
+    font-family: 'Copperplate', 'Papyrus', 'fantasy';
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dot {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+header .profile h1 {
+    padding-left: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: var(--third);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, opacity 0.3s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    color: var(--secondary);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*******************************************************/
+
+.section {
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary);
+}
+
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-container img {
+    width: 27rem;
+    margin-top: 5.8rem;
+    margin-bottom: 5.8rem;
+    margin-right: 9rem;
+    transition: transform 1.5s, background 0.5s;
+
+}
+
+.profile-container img:hover {
+    transform: scale(1.05);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+
+}
+
+.name .mrkn {
+    font-size: 6rem;
+}
+
+.name h1 {
+    margin: 0;
+    font-family: 'broadway';
+    font-size: 9rem;
+    font-weight: 900;
+    color: var(--third);
+    text-shadow: 10px 10px 1px var(--secondary);
+
+}
+
+.name h1+h1 {
+    margin-top: 0.2rem;
+}
+
+
+.description {
+    margin-top: 3rem;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    color: var(--third);
+    font-size: 1rem;
+}
+
+/**********************************************************/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about {
+    text-align: center;
+    background: var(--primary);
+    margin-bottom: 13rem;
+    position: relative;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'broadway';
+    font-size: 2rem;
+    position: relative;
+}
+
+
+.about .rectangle h1 {
+    position: absolute;
+    align-items: center;
+    top: 20px;
+    left: 5rem;
+    color: var(--third);
+    text-shadow: 2px 2px 4px var(--forth);
+    font-size: 2.5em;
+}
+
+.about-buttons {
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+}
+
+.about-buttons .button {
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: var(--third);
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-weight: bold;
+    color: var(--fifth);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+    font-size: 0.8em;
+    box-shadow: 2px 2px 4px var(--forth);
+}
+
+
+.about-buttons .button:hover {
+    transform: scale(1.1);
+    background: var(--secondary);
+    color: var(--third);
+}
+
+.info-container {
+    position: absolute;
+    top: 32rem;
+    left: 50%;
+    right: 5rem;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    pointer-events: none;
+    padding-top: 3rem;
+}
+
+.info-text {
+    font-family: Copperplate, "Copperplate Gothic", fantasy;
+
+    font-size: 1rem;
+    color: var(--third);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: all;
+    white-space: pre-line;
+}
+
+
+/**************************************************************/
+
+.skills {
+    background: var(--forth);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 9rem;
+}
+
+.skills h2 {
+    font-size: 4.5em;
+    color: var(--third);
+    font-family: 'broadway';
+    text-shadow: 2px 2px 4px var(--secondary);
+
+    padding-top: 2rem;
+}
+
+.skills-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 1.5rem;
+}
+
+
+
+.skill {
+    font-family: Copperplate, "Copperplate Gothic", fantasy;
+    background: var(--secondary);
+    position: relative;
+    height: 15rem;
+
+    padding: 4rem 1rem 0rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 10rem;
+    text-align: center;
+    flex: 1;
+    transition: background 0.5s, opacity 0.9s;
+    overflow: hidden;
+    color: var(--third);
+
+}
+
+.skill:hover {
+    flex: 1.5;
+    background: var(--fifth);
+}
+
+.skill .default-text {
+    display: block;
+    transition: opacity 0.5s;
+}
+
+.skill .hover-text {
+    display: none;
+    transition: opacity 0.5s;
+}
+
+.skill:hover .default-text {
+    display: none;
+}
+
+.skill:hover .hover-text {
+    display: block;
+}
+
+.skill .skill-image {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5rem;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.skill:hover .skill-image {
+    opacity: 0;
+}
+
+/**********************************************************/
+
+
+
+.work {
+    background-color: var(--secondary);
+    color: var(--third);
+    padding: 3rem 0rem;
+}
+
+.work .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+}
+
+.work .rectangle {
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    align-items: center;
+}
+
+
+.work .rectangle h1 {
+    white-space: nowrap;
+    position: absolute;
+    top: 1.8rem;
+    left: auto;
+    right: 5rem;
+    margin: 0 0.5rem;
+    font-family: 'broadway';
+    color: var(--third);
+    text-shadow: 2px 2px 4px var(--forth);
+    font-size: 4.5em;
+}
+
+.work-examples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    overflow-x: auto;
+    padding: 15rem 0rem 7rem 0rem;
+}
+
+
+
+.work-item {
+    background-color: var(--third);
+    width: 13rem;
+    height: 13rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.9s;
+    text-decoration: none;
+    box-shadow: 10px 10px 1px var(--forth);
+
+}
+
+
+
+.work-item p {
+    font-size: 1.5em;
+    translate: (-50%, -50%);
+    padding-top: 30%;
+    font-weight: bold;
+    margin: 0;
+    color: var(--secondary);
+    font-family: Copperplate, "Copperplate Gothic", fantasy;
+
+
+}
+
+.work-item:hover {
+    transform: scale(1.03);
+
+}
+
+.work-button {
+    display: inline-block;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--third);
+    background-color: var(--fifth);
+    border: none;
+    border-radius: 10rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 1px var(--primary);
+
+}
+
+.work-button:hover {
+    background-color: var(--primary);
+}
+
+/**************************************************************/
+
+.contact {
+    background: var(--primary);
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'broadway';
+    color: var(--third);
+    text-shadow: 2px 2px 4px var(--forth);
+    font-size: 4.5em;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    margin: 6rem 0;
+}
+
+.contact-info {
+    text-align: left;
+    width: 20rem;
+    font-family: Copperplate, "Copperplate Gothic", fantasy;
+    background-color: var(--third);
+    border-radius: 2rem;
+    padding: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--fifth);
+
+
+}
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact form input {
+    width: 20rem;
+    padding: 10px;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--third);
+
+}
+
+.contact form textarea {
+    width: 20rem;
+    height: 8rem;
+    padding: 10px;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--third);
+
+}
+
+.contact form button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--secondary);
+    color: var(--third);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact form button:hover {
+    background: var(--forth);
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--fifth);
+    font-size: 1.5rem;
+}
+
+.contact-info a {
+    color: var(--fifth);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--primary);
+}
+
+.contact .cv-download {
+    display: block;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: var(--secondary);
+    color: var(--third);
+    border-radius: 2rem;
+    text-decoration: none;
+    font-family: Copperplate, "Copperplate Gothic", fantasy;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.contact .cv-download:hover {
+    background-color: var(--primary);
+    color: var(--third);
+}
+
+
+/*************************************/
+@media (max-width: 1120px) {
+
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .profile-container img {
+        margin-bottom: 0;
+        margin-right: 0;
+        width: 100%;
+        max-width: none;
+    }
+
+    .text-container {
+        margin-top: 0rem;
+        align-items: center
+    }
+
+
+
+
+
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .profile-container img {
+        margin-bottom: 0;
+        margin-right: 0;
+        width: 80%;
+        max-width: none;
+    }
+
+    .text-container {
+        margin-top: 0rem;
+        align-items: center
+    }
+
+    .name .mrkn {
+        font-size: 2rem;
+    }
+
+    .name h1 {
+        font-size: 5rem;
+
+    }
+
+    .description {
+        font-size: 0.6rem;
+    }
+
+    .about .rectangle h1 {
+        font-size: 1.9em;
+    }
+
+    .skills h2 {
+        font-size: 3.5em;
+    }
+
+    .work .rectangle h1 {
+        font-size: 3.5em;
+    }
+
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .about-buttons {
+        flex-direction: column;
+    }
+
+    .info-container {
+        top: 68rem;
+        width: 90%;
+    }
+
+    .skills-icons,
+    .work-examples {
+        flex-direction: column;
+    }
+
+    .skill {
+        font-size: 0.7rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact form {
+        width: 15rem;
+        text-align: center;
+    }
+
+    .contact-info p {
+        text-align: center;
+    }
+}
