@@ -510,6 +510,7 @@ body {
     background: var(--secondary);
     color: var(--third);
     border-radius: 2rem;
+    font-family: var(--text);
     cursor: pointer;
     transition: background 0.3s;
 }
