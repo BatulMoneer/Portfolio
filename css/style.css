@@ -489,6 +489,7 @@ body {
     width: 20rem;
     padding: 10px;
     border-radius: 2rem;
+    font-family: var(--text);
     border: 0.1rem solid var(--third);
 
 }
@@ -498,6 +499,7 @@ body {
     height: 8rem;
     padding: 10px;
     border-radius: 2rem;
+    font-family: var(--text);
     border: 0.1rem solid var(--third);
 
 }
@@ -576,122 +578,128 @@ body {
         align-items: center;
     }
 
+}
 
-
-    @media (max-width: 768px) {
-        header .container {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .profile-container {
-            flex-direction: column;
-            align-items: center;
-            margin-right: 0;
-        }
-
-        .profile-container img {
-            margin-bottom: 0;
-            margin-right: 0;
-            width: 80%;
-            max-width: none;
-        }
-
-        .text-container {
-            margin-top: 0rem;
-            align-items: center;
-        }
-
-        .name .mrkn {
-            font-size: 2rem;
-        }
-
-        .name h1 {
-            font-size: 5rem;
-        }
-
-        .description {
-            font-size: 0.6rem;
-        }
-
-        .about {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .about .rectangle {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .about .rectangle h1 {
-            font-size: 1.9em;
-            text-align: center;
-            margin: 0;
-            left: 0;
-            right: 0;
-        }
-
-        .about-buttons {
-            flex-direction: column;
-        }
-
-        .info-container {
-            top: 68rem;
-            width: 90%;
-        }
-
-        .skills h2 {
-            font-size: 3.5em;
-        }
-
-        .skills-icons,
-        .work-examples {
-            flex-direction: column;
-        }
-
-        .skill {
-            font-size: 0.7rem;
-        }
-
-        .work {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .work .rectangle {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .work .rectangle h1 {
-            font-size: 3.5em;
-            text-align: center;
-            margin: 0;
-            left: 0;
-            right: 0;
-        }
-
-        .contact-content {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .contact-info,
-        .contact form {
-            width: 15rem;
-            text-align: center;
-        }
-
-        .contact-info p {
-            text-align: center;
-        }
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
     }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .profile-container img {
+        margin-bottom: 0;
+        margin-right: 0;
+        width: 80%;
+        max-width: none;
+    }
+
+    .text-container {
+        margin-top: 0rem;
+        align-items: center;
+    }
+
+    .name .mrkn {
+        font-size: 2rem;
+    }
+
+    .name h1 {
+        font-size: 5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .rectangle {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about .rectangle h1 {
+        font-size: 1.9em;
+        text-align: center;
+        margin: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+    .about-buttons {
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+
+    .info-container {
+        top: 68rem;
+        width: 90%;
+    }
+
+    .skills h2 {
+        font-size: 3.5em;
+    }
+
+    .skills-icons,
+    .work-examples {
+        flex-direction: column;
+    }
+
+    .skill {
+        font-size: 0.9rem;
+    }
+
+    .work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .work .rectangle {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .work .rectangle h1 {
+        font-size: 3.5em;
+        text-align: center;
+        margin: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .work-examples {
+        font-size: 0.9rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact form {
+        width: 15rem;
+        text-align: center;
+    }
+
+    .contact-info p {
+        text-align: center;
+    }
+}
