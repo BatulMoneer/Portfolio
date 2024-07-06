@@ -5,14 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     form.setAttribute("action", config.formspreeEndpoint);
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the form from submitting normally
+        event.preventDefault();
 
-        // Optionally, you can perform client-side validation here
 
-        // Get form data
         const formData = new FormData(this);
 
-        // Submit the form data using Fetch API
         fetch(config.formspreeEndpoint, {
             method: "POST",
             body: formData,
@@ -28,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .then(data => {
                 alert("Form submitted successfully!");
-                // Optionally, clear form fields or perform other actions
                 form.reset();
             })
             .catch(error => {
