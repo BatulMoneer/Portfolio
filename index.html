@@ -146,15 +146,12 @@
                     <a href="pdf\Batul-Mrakkan-CV.pdf" class="cv-download" download> My CV</a>
                 </div>
 
-                <form id="myForm" action="https://formspree.io/f/movaqynd" method="POST">
+                <form action="sendemail.php" method="post">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="_replyto" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your Message" required></textarea>
                     <button type="submit">Submit</button>
                 </form>
-
-                <!-- Include Formspree JavaScript to handle form submission -->
-                <script src="https://formspree.io/js/form-submit.js" type="module"></script>
             </div>
         </div>
     </section>
