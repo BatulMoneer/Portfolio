@@ -555,12 +555,8 @@ body {
 
 
 /*************************************/
+@media (max-width: 1150px) {
 
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        text-align: center;
-    }
 
     .profile-container {
         flex-direction: column;
@@ -580,96 +576,122 @@ body {
         align-items: center;
     }
 
-    .name .mrkn {
-        font-size: 2rem;
-    }
 
-    .name h1 {
-        font-size: 5rem;
-    }
 
-    .description {
-        font-size: 0.6rem;
-    }
+    @media (max-width: 768px) {
+        header .container {
+            flex-direction: column;
+            text-align: center;
+        }
 
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+        .profile-container {
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0;
+        }
 
-    .about .rectangle {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+        .profile-container img {
+            margin-bottom: 0;
+            margin-right: 0;
+            width: 80%;
+            max-width: none;
+        }
 
-    .about .rectangle h1 {
-        font-size: 1.9em;
-        text-align: center;
-        margin: 0;
-        left: 0;
-        right: 0;
-    }
+        .text-container {
+            margin-top: 0rem;
+            align-items: center;
+        }
 
-    .about-buttons {
-        flex-direction: column;
-    }
+        .name .mrkn {
+            font-size: 2rem;
+        }
 
-    .info-container {
-        top: 68rem;
-        width: 90%;
-    }
+        .name h1 {
+            font-size: 5rem;
+        }
 
-    .skills h2 {
-        font-size: 3.5em;
-    }
+        .description {
+            font-size: 0.6rem;
+        }
 
-    .skills-icons,
-    .work-examples {
-        flex-direction: column;
-    }
+        .about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-    .skill {
-        font-size: 0.7rem;
-    }
+        .about .rectangle {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
 
-    .work {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+        .about .rectangle h1 {
+            font-size: 1.9em;
+            text-align: center;
+            margin: 0;
+            left: 0;
+            right: 0;
+        }
 
-    .work .rectangle {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+        .about-buttons {
+            flex-direction: column;
+        }
 
-    .work .rectangle h1 {
-        font-size: 3.5em;
-        text-align: center;
-        margin: 0;
-        left: 0;
-        right: 0;
-    }
+        .info-container {
+            top: 68rem;
+            width: 90%;
+        }
 
-    .contact-content {
-        flex-direction: column;
-        align-items: center;
-    }
+        .skills h2 {
+            font-size: 3.5em;
+        }
 
-    .contact-info,
-    .contact form {
-        width: 15rem;
-        text-align: center;
-    }
+        .skills-icons,
+        .work-examples {
+            flex-direction: column;
+        }
 
-    .contact-info p {
-        text-align: center;
+        .skill {
+            font-size: 0.7rem;
+        }
+
+        .work {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .work .rectangle {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .work .rectangle h1 {
+            font-size: 3.5em;
+            text-align: center;
+            margin: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .contact-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-info,
+        .contact form {
+            width: 15rem;
+            text-align: center;
+        }
+
+        .contact-info p {
+            text-align: center;
+        }
     }
-}
