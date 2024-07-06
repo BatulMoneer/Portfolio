@@ -9,9 +9,9 @@
     /*000000*/
     --fifth: #516FBC;
     /*474747*/
-    --header: 'Copperplate', 'Papyrus', fantasy;
+    --header: 'Copperplate', 'Papyrus', monospace;
     --text: 'Copperplate', 'Copperplate Gothic Light', serif;
-    --profile: 'Copperplate', 'Papyrus', fantasy;
+    --profile: 'Copperplate', 'Papyrus', monospace;
 }
 
 body {
@@ -623,6 +623,7 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding-top: 4rem;
     }
 
     .about .rectangle {
