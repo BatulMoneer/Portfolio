@@ -145,13 +145,15 @@
                             albatularts@gmail.com</a></p>
                     <a href="pdf\Batul-Mrakkan-CV.pdf" class="cv-download" download> My CV</a>
                 </div>
-
-                <form action="sendemail.php" method="post">
+                <form id="myForm">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="_replyto" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your Message" required></textarea>
                     <button type="submit">Submit</button>
                 </form>
+
+                <script src="js\config.js"></script>
+                <script src="js\submit.js"></script>
             </div>
         </div>
     </section>
