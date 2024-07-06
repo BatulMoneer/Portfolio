@@ -9,9 +9,9 @@
     /*000000*/
     --fifth: #516FBC;
     /*474747*/
-    --header: 'Copperplate', 'Papyrus', monospace;
+    --header: 'Copperplate', 'Papyrus', fantasy;
     --text: 'Copperplate', 'Copperplate Gothic Light', serif;
-    --profile: 'Copperplate', 'Papyrus', monospace;
+    --profile: 'Copperplate', 'Papyrus', fantasy;
 }
 
 body {
