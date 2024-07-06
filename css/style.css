@@ -9,6 +9,9 @@
     /*000000*/
     --fifth: #516FBC;
     /*474747*/
+    --header: 'broadway', cursive;
+    --text: 'Copperplate', 'Copperplate Gothic Light', serif;
+    --profile: 'Copperplate', 'Papyrus', cursive;
 }
 
 body {
@@ -32,7 +35,7 @@ header .container {
 }
 
 header .profile {
-    font-family: 'Copperplate', 'Papyrus', 'fantasy';
+    font-family: var(--profile);
     font-size: small;
     display: flex;
     justify-content: space-around;
@@ -53,7 +56,7 @@ header .profile h1 {
 
 nav ul {
     list-style: none;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-family: var(--text);
     padding: 0;
     margin: 0;
     display: flex;
@@ -127,7 +130,7 @@ nav ul li a:hover {
 
 .name h1 {
     margin: 0;
-    font-family: 'broadway';
+    font-family: var(--header);
     font-size: 9rem;
     font-weight: 900;
     color: var(--third);
@@ -142,7 +145,7 @@ nav ul li a:hover {
 
 .description {
     margin-top: 3rem;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-family: var(--text);
     color: var(--third);
     font-size: 1rem;
 }
@@ -150,7 +153,6 @@ nav ul li a:hover {
 /**********************************************************/
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -168,7 +170,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    font-family: 'broadway';
+    font-family: var(--header);
     font-size: 2rem;
     position: relative;
 }
@@ -202,7 +204,7 @@ body {
     align-items: center;
     border: none;
     background: var(--third);
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-family: var(--text);
     font-weight: bold;
     color: var(--fifth);
     border-radius: 50%;
@@ -236,7 +238,7 @@ body {
 }
 
 .info-text {
-    font-family: Copperplate, "Copperplate Gothic", fantasy;
+    font-family: var(--text);
 
     font-size: 1rem;
     color: var(--third);
@@ -262,7 +264,7 @@ body {
 .skills h2 {
     font-size: 4.5em;
     color: var(--third);
-    font-family: 'broadway';
+    font-family: var(--header);
     text-shadow: 2px 2px 4px var(--secondary);
 
     padding-top: 2rem;
@@ -280,7 +282,7 @@ body {
 
 
 .skill {
-    font-family: Copperplate, "Copperplate Gothic", fantasy;
+    font-family: var(--text);
     background: var(--secondary);
     position: relative;
     height: 15rem;
@@ -367,7 +369,7 @@ body {
     left: auto;
     right: 5rem;
     margin: 0 0.5rem;
-    font-family: 'broadway';
+    font-family: var(--header);
     color: var(--third);
     text-shadow: 2px 2px 4px var(--forth);
     font-size: 4.5em;
@@ -409,7 +411,7 @@ body {
     font-weight: bold;
     margin: 0;
     color: var(--secondary);
-    font-family: Copperplate, "Copperplate Gothic", fantasy;
+    font-family: var(--text);
 
 
 }
@@ -447,7 +449,7 @@ body {
 }
 
 .contact h2 {
-    font-family: 'broadway';
+    font-family: var(--header);
     color: var(--third);
     text-shadow: 2px 2px 4px var(--forth);
     font-size: 4.5em;
@@ -464,7 +466,7 @@ body {
 .contact-info {
     text-align: left;
     width: 20rem;
-    font-family: Copperplate, "Copperplate Gothic", fantasy;
+    font-family: var(--text);
     background-color: var(--third);
     border-radius: 2rem;
     padding: 3rem;
@@ -539,7 +541,7 @@ body {
     color: var(--third);
     border-radius: 2rem;
     text-decoration: none;
-    font-family: Copperplate, "Copperplate Gothic", fantasy;
+    font-family: var(--text);
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -553,39 +555,12 @@ body {
 
 
 /*************************************/
-@media (max-width: 1120px) {
-
-
-    .profile-container {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0;
-    }
-
-    .profile-container img {
-        margin-bottom: 0;
-        margin-right: 0;
-        width: 100%;
-        max-width: none;
-    }
-
-    .text-container {
-        margin-top: 0rem;
-        align-items: center
-    }
-
-
-
-
-
-}
 
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
         text-align: center;
     }
-
 
     .profile-container {
         flex-direction: column;
@@ -602,7 +577,7 @@ body {
 
     .text-container {
         margin-top: 0rem;
-        align-items: center
+        align-items: center;
     }
 
     .name .mrkn {
@@ -611,29 +586,32 @@ body {
 
     .name h1 {
         font-size: 5rem;
-
     }
 
     .description {
         font-size: 0.6rem;
     }
 
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .rectangle {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
     .about .rectangle h1 {
         font-size: 1.9em;
-    }
-
-    .skills h2 {
-        font-size: 3.5em;
-    }
-
-    .work .rectangle h1 {
-        font-size: 3.5em;
-    }
-
-
-
-    nav ul {
-        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        left: 0;
+        right: 0;
     }
 
     .about-buttons {
@@ -645,6 +623,10 @@ body {
         width: 90%;
     }
 
+    .skills h2 {
+        font-size: 3.5em;
+    }
+
     .skills-icons,
     .work-examples {
         flex-direction: column;
@@ -652,6 +634,28 @@ body {
 
     .skill {
         font-size: 0.7rem;
+    }
+
+    .work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .work .rectangle {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .work .rectangle h1 {
+        font-size: 3.5em;
+        text-align: center;
+        margin: 0;
+        left: 0;
+        right: 0;
     }
 
     .contact-content {
