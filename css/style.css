@@ -9,7 +9,7 @@
     /*000000*/
     --fifth: #516FBC;
     /*474747*/
-    --header: 'broadway', cursive;
+    --header: 'Copperplate', 'Papyrus', cursive;
     --text: 'Copperplate', 'Copperplate Gothic Light', serif;
     --profile: 'Copperplate', 'Papyrus', cursive;
 }
@@ -125,13 +125,13 @@ nav ul li a:hover {
 }
 
 .name .mrkn {
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 .name h1 {
     margin: 0;
-    font-family: var(--header);
-    font-size: 9rem;
+    font-family: var(--profile);
+    font-size: 7rem;
     font-weight: 900;
     color: var(--third);
     text-shadow: 10px 10px 1px var(--secondary);
