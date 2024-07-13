@@ -9,6 +9,10 @@
     --text: 'Copperplate', 'Copperplate Gothic Light', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
