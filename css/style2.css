@@ -1,13 +1,14 @@
 :root {
-    --primary: #474747;
+    --primary: #353535;
     --secondary: #516FBC;
-    --third: #000000;
-    --forth: #E48845;
+    --third: #131313;
+    --forth: #c58252;
     --fifth: #ffffff;
 
     --header: 'Copperplate', 'Papyrus', fantasy;
     --text: 'Copperplate', 'Copperplate Gothic Light', serif;
 }
+
 
 html {
     scroll-behavior: smooth;
