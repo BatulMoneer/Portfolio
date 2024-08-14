@@ -606,14 +606,20 @@ body {
 
     .name .mrkn {
         font-size: 2rem;
+        text-align: center;
     }
 
     .name h1 {
-        font-size: 5rem;
+        font-size: 4rem;
+        text-align: center;
+        text-shadow:none ;
+
     }
 
     .description {
         font-size: 0.9rem;
+        text-align: center;
+        padding: 0 2rem;
     }
 
     .about {
