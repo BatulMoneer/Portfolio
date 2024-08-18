@@ -9,9 +9,9 @@
     /*000000*/
     --fifth: #516FBC;
     /*474747*/
-    --header: 'Copperplate', 'Papyrus', fantasy;
-    --text: 'Copperplate', 'Copperplate Gothic Light', serif;
-    --profile: 'Copperplate', 'Papyrus', fantasy;
+    --header: 'Copperplate', 'Papyrus', 'Montserrat', fantasy;
+    --text: 'Copperplate', 'Copperplate Gothic Light', 'Montserrat', serif;
+    --profile: 'Copperplate', 'Papyrus', 'Montserrat', fantasy;
 }
 
 html {
@@ -113,8 +113,24 @@ nav ul li a:hover {
     margin-top: 5.8rem;
     margin-bottom: 5.8rem;
     margin-right: 9rem;
-    transition: transform 1.5s, background 0.5s;
+    -webkit-animation: floatBubble 2s infinite  normal ease-out;
+    animation: float-up-down 2s ease-in-out infinite both;
+}
 
+@-webkit-keyframes float-up-down {
+    0% {
+        -webkit-transform:translateY(0)
+    }
+
+    50% {
+        -webkit-transform: translateY(-10%);
+        transform:translateY(-10%)
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform:translateY(0)
+    }
 }
 
 .profile-container img:hover {
@@ -195,7 +211,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
     position: relative;
 }
 
@@ -207,15 +223,13 @@ body {
     justify-content: center;
     align-items: center;
     border: none;
-    background: var(--third);
     font-family: var(--text);
     font-weight: bold;
-    color: var(--fifth);
     border-radius: 50%;
+    color: var(--fifth);
     cursor: pointer;
     transition: background 0.3s, opacity 0.3s;
     font-size: 0.8em;
-    box-shadow: 2px 2px 4px var(--forth);
 }
 
 
@@ -226,11 +240,7 @@ body {
 }
 
 .info-container {
-    position: absolute;
-    top: 32rem;
-    left: 50%;
-    right: 5rem;
-    transform: translate(-50%, -50%);
+    
     width: 100%;
     height: 3rem;
     display: flex;
@@ -238,12 +248,11 @@ body {
     text-align: left;
     align-items: center;
     pointer-events: none;
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
 .info-text {
     font-family: var(--text);
-
     font-size: 1rem;
     color: var(--third);
     opacity: 0;
@@ -262,6 +271,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 9rem;
 }
 
@@ -290,7 +301,6 @@ body {
     background: var(--secondary);
     position: relative;
     height: 15rem;
-
     padding: 4rem 1rem 0rem 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -304,7 +314,7 @@ body {
 }
 
 .skill:hover {
-    flex: 1.5;
+    flex: 3.5;
     background: var(--fifth);
 }
 
@@ -569,7 +579,7 @@ body {
     .profile-container img {
         margin-bottom: 0;
         margin-right: 0;
-        width: 80%;
+        width: 50%;
         max-width: none;
     }
 
@@ -595,7 +605,7 @@ body {
     .profile-container img {
         margin-bottom: 2rem;
         margin-right: 0;
-        width: 80%;
+        width: 60%;
         max-width: none;
     }
 
@@ -607,12 +617,15 @@ body {
     .name .mrkn {
         font-size: 2rem;
         text-align: center;
+        color: var(--secondary);
     }
 
     .name h1 {
         font-size: 4rem;
         text-align: center;
         text-shadow:none ;
+        color: var(--secondary);
+
 
     }
 
@@ -646,10 +659,23 @@ body {
 
     }
 
+    
     .about-buttons {
+        padding-top: 10rem;
+        gap: 1rem;
         flex-direction: column;
         font-size: 1.3rem;
+
+
     }
+    
+    .about-buttons .button {
+        height: 3rem;
+        width: 9rem;
+        border-radius: 1rem;
+    }
+
+    
 
     .info-container {
         top: 68rem;
@@ -668,6 +694,10 @@ body {
     .skill {
         font-size: 0.9rem;
     }
+    .skills-images {
+        gap: 0.3rem;
+    }
+    
 
     .work {
         display: flex;

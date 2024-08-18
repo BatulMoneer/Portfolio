@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const infoText = document.getElementById('info-text');
 
     buttons.forEach(button => {
-        button.addEventListener('mouseover', () => {
+        button.addEventListener('click', () => {
             const isActive = button.classList.contains('active');
 
             if (!isActive) {
@@ -20,19 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     infoText.style.opacity = '1';
                 }, 30);
             }
+            else{
+                buttons.forEach(b => {
+                    b.classList.remove('active');
+                    b.style.opacity = '1';
+                    b.disabled = false;
+                });
+                infoText.style.opacity = '0';
+                setTimeout(() => {
+                    infoText.style.display = 'none';
+                }, 30);
+            }
         });
 
-        button.addEventListener('mouseleave', () => {
-            buttons.forEach(b => {
-                b.classList.remove('active');
-                b.style.opacity = '1';
-                b.disabled = false;
-            });
-            infoText.style.opacity = '0';
-            setTimeout(() => {
-                infoText.style.display = 'none';
-            }, 30);
-        });
     });
 });
 
